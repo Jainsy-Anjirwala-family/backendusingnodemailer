@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
       });
 
-      app.listen(4000, () => {
-        console.log(`Server is running on http://localhost:400`);
+      app.listen(3000, () => {
+        console.log(`Server is running on http://localhost:3000`);
       });
       
