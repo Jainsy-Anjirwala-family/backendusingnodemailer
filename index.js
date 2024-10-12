@@ -1,10 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import sendmail from './sendmail.js';
+import cors from 'cors';
 const app = express();
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 
     app.post('/send-email',async (req, res) => {
         try {
